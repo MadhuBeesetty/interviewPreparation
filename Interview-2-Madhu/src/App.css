@@ -1,0 +1,21 @@
+main {
+    font-family: monospace;
+    padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 3px 6px;
+  border: 1px solid #ddd;
+}
+
+tr:last-child td, tr:last-child th {
+  background: whitesmoke;
+}
+
+td {
+  text-align: right;
+}

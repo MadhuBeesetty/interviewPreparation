@@ -7,7 +7,6 @@ const MoviesList = () => {
   // fetch('https://swapi.dev/api/films')
   //   .then(response => response.json())
   //   .then(((data) => { updateList(data); console.log(data) }));
-
   // console.log(list, 'movies list');
 
   useEffect(() => {
@@ -29,6 +28,5 @@ const MoviesList = () => {
     </div>
   )
 }
-
 
 export default MoviesList;

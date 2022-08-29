@@ -26,6 +26,24 @@ class SingleLinkedList {
     }
     this.length = this.length + 1;
   };
+
+  pop() {
+    if (!this.head) return undefined;
+    let current = this.head;
+    let newTail = current;
+    while (current.next) {
+      newTail = current;
+      current = current.next;
+    };
+    this.tail = newTail;
+    this.tail.next = null;
+    this.length--;
+    if (this.length === 0) {
+      this.head = null;
+      this.tail = null;
+    }
+    return current;
+  };
 };
 
 let newList = new SingleLinkedList();
@@ -37,3 +55,14 @@ console.log(newList);
 console.log(newList.head);
 console.log(newList.head.next);
 console.log(newList.tail);
+// console.log(newList);
+// newList.pop();
+// console.log(newList);
+// newList.pop();
+// console.log(newList);
+
+// newList.push('madhu');
+// newList.push('sudhan');
+// newList.push('cookie');
+
+// console.log(newList);

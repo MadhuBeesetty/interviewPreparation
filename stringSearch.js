@@ -1,11 +1,11 @@
 //['bobby', 'bob', 'boss', 'boxer','rick', 'bobb'] ---> input array from data base ||| "bobby" ----> search string
 //['bobby', 'bob', 'boss', 'boxer', 'bobb'] - b;
-// ['bobby', 'bob', 'boss', 'boxer', 'bobb'] - bo;
+//['bobby', 'bob', 'boss', 'boxer', 'bobb'] - bo;
 //['bobby', 'bob', 'bobb'] - bob;
 //['bobby','bobb'] - bobb;
 //['bobby'] - bobby;
 
-const searchString = (arr, string, output = [], i = 0) => {
+export const searchString = (arr, string, output = [], i = 0) => {
   if (i === string.length) return output;
   let ans = [];
   for (var j = 0; j < arr.length; j++) {
@@ -17,4 +17,4 @@ const searchString = (arr, string, output = [], i = 0) => {
   return searchString(ans, string, output, i + 1,);
 };
 
-console.log(searchString(['bobby', 'bob', 'boss', 'boxer', 'rick', 'bobb'], 'bobby'));
+// console.log(searchString(['bobby', 'bob', 'boob', 'boss', 'boxer', 'rick', 'bobb'], 'bobby'));
